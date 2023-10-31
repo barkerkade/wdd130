@@ -8,7 +8,7 @@ nav a {
     text-decoration: none;
     padding: 35px;
 }
-.main.home-grid{
+.home-grid{
     display: grid;
     grid-template-columns: repeat(10, 1fr);
 }
@@ -16,7 +16,7 @@ nav a {
     height: 725px;
     background-color:#267F8D ;
     grid-column: 1/11;
-    grid-row: 5/8;
+    grid-row: 4/9;
 }
 .card-img{
     width: 100%;
@@ -169,7 +169,8 @@ footer{
     align-items: center;
 }
 footer a{
-    color: #267F8D;
+    color:#267F8D;
+    text-decoration: none;
 }
 footer a:hover{
     color: black;
