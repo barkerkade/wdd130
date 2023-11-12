@@ -241,3 +241,25 @@ h4{
         margin-top: 25px;
     }
 }
+/* Rates and Dates */
+#rafting {
+    display: grid;
+    grid-template-columns: 3fr 2fr 3fr;
+}
+.rates-title {
+    font-family:"Roboto Mono", 'Times New Roman', Times, serif ;
+    font-size: 2em;
+    margin-top: 10px;
+    color: white;
+    grid-column: 3/3;
+}
+.rafting-msg {
+    background-color: #ffb563;
+    line-height: 1.5em;
+    padding: 35px;
+    grid-column: 6/10;
+    grid-row: 6/7;
+    box-shadow: 5px 5px 10px gray;
+    text-align: left;
+    font-family: "Roboto Mono", 'Times New Roman', Times, serif;
+}
