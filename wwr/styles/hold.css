@@ -1,0 +1,22 @@
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+nav a {
+    text-align: center;
+    color: #584D53;
+    text-decoration: none;
+    padding: 35px;
+}
+.home-grid{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+#background {
+    height: 725px;
+    background-color: #1DD2D8;
+    grid-column: 1/11;
+}
+.card-img {
+    width: 100%;
+}
