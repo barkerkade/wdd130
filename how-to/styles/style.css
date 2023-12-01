@@ -1,7 +1,7 @@
 body{
   display: grid;
   grid-template-columns: repeat(10, 1fr);
-  background-color: #2196F3;
+  background-color: #21f360;
 }
 header{
   display: flex;
@@ -11,7 +11,7 @@ header{
 }
 .btn {
   border: none; /* Remove borders */
-  color: #555; /* Add a text color */
+  color: #161515; /* Add a text color */
   padding: 14px 28px; /* Add some padding */
   cursor: pointer; /* Add a pointer cursor on mouse-over */
 }
