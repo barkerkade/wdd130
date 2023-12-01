@@ -63,10 +63,10 @@ main section img{
     width: 1000px; /* This makes the image fill its container */
     max-width: 1600px; /* Adjust the max-width as needed */
     height: auto; /* Maintain aspect ratio */
-    margin-left: 300px;
+    margin-left: 500px;
     align-items: center;
     margin: 0 auto;
-    grid-column: 2/3;
+    grid-column: 2/7;
 }
 .home-title, h4{
     background-color: #584D53;
