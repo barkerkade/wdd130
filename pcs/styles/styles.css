@@ -1,9 +1,10 @@
 #content {
-    max-width: 1600px;
+    max-width: 100;
     margin: 0 auto;
 }
 body{
     background-color: #D4E2E8;
+    grid-template-columns: repeat(10, 1fr);
 }
 header {
     background-color: #1DD2D8 ;
@@ -21,6 +22,8 @@ nav a {
     color: #584D53;
     text-decoration: none;
     padding: 35px;
+    margin-left: auto;
+    padding-left: 50px;
     font-family: 'Times New Roman', Times, serif;
 }
 nav {
@@ -60,9 +63,9 @@ main section img{
 }
 #base-img,
 #repair-img {
-    width: 1000px; /* This makes the image fill its container */
+    width: auto; /* This makes the image fill its container */
     max-width: 1600px; /* Adjust the max-width as needed */
-    height: auto; /* Maintain aspect ratio */
+    height: 500px; /* Maintain aspect ratio */
     margin-left: 500px;
     align-items: center;
     margin: 0 auto;
@@ -72,8 +75,7 @@ main section img{
     background-color: #584D53;
     color: #1DD2D8;
     font-family: 'Times New Roman', Times, serif;
-    grid-column: 1/4;
-    grid-row: 5;
+    grid-column: 4/5;
     font-size: 1.5em;
 }
 #background {
