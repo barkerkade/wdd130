@@ -9,7 +9,7 @@ body{
 header {
     background-color: #1DD2D8 ;
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
+    grid-template-columns: 150px auto;
     grid-template-rows: 100px;
 }
 .logo {
@@ -58,7 +58,6 @@ main section img{
 }
 .repair-box{
     align-items: center;
-    max-width: 1600px;
     grid-row: 5/8;
 }
 #base-img,
@@ -66,10 +65,9 @@ main section img{
     width: auto; /* This makes the image fill its container */
     max-width: 1600px; /* Adjust the max-width as needed */
     height: 500px; /* Maintain aspect ratio */
-    margin-left: 500px;
-    align-items: center;
-    margin: 0 auto;
-    grid-column: 2/7;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 .home-title, h4{
     background-color: #584D53;
@@ -106,7 +104,7 @@ main section img{
     color: #584D53;
     font-size: 1em;
     padding: 15px;
-    width: 80%; /* Adjust the width as needed */
+    width: 100%; /* Adjust the width as needed */
     margin-top: 10px; /* Adjust the top margin as needed */
     box-sizing: border-box;
 }
@@ -115,11 +113,11 @@ footer{
     background-color: #584D53;
     color: #1DD2D8;
     text-decoration: none;
-    padding: auto;
-    margin: 50px;
+    padding: 25px 50px;
+    margin-top: 200px;
     display: flex;
     justify-content: space-around;
-    align-items: baseline;
+    align-items: center;
 }
 footer a{
     color: #A2DDB9;
