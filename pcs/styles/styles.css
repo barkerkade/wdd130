@@ -48,7 +48,7 @@ main section img{
     text-align: center;
     margin-top: 10px;
 }
-#base-box{
+.base-box{
     align-items: center;
     max-width: 1600px;
 
@@ -70,7 +70,8 @@ main section img{
     background-color: #584D53;
     color: #1DD2D8;
     font-family: 'Times New Roman', Times, serif;
-    grid-column: 4/5;
+    grid-column: 1/11;
+    grid-row: inherit;
     font-size: 1.5em;
 }
 #background {
@@ -124,4 +125,23 @@ footer a:hover{
     text-decoration: underline;
     background-color: #584D53;
     color: #1DD2D8;
+}
+/*Custom builds*/
+.io-box{
+    align-items: center;
+    max-width: 1600px;
+
+}
+.custom-box{
+    align-items: center;
+    grid-row: 5/8;
+}
+#io-img,
+#custom-img {
+    width: auto; /* This makes the image fill its container */
+    max-width: 1600px; /* Adjust the max-width as needed */
+    height: 500px; /* Maintain aspect ratio */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
