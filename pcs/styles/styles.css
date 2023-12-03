@@ -127,14 +127,17 @@ footer a:hover{
     color: #1DD2D8;
 }
 /*Custom builds*/
+.io{
+    grid-column: 2/5;
+}
 .io-box{
     align-items: center;
     max-width: 1600px;
 
 }
 .custom-box{
-    align-items: center;
-    grid-row: 5/8;
+    align-items: baseline;
+    grid-column: 3/7;
 }
 #io-img,
 #custom-img {
