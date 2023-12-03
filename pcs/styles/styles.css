@@ -1,7 +1,6 @@
 #content {
-    max-width: 100;
-    margin: 0 auto;
-}
+    margin : 0 auto;
+    }
 body{
     background-color: #D4E2E8;
     grid-template-columns: repeat(10, 1fr);
@@ -13,10 +12,8 @@ header {
     grid-template-rows: 100px;
 }
 .logo {
-    grid-column: 1fr;
-    padding: auto;
-    width: 100px;
-}
+    width : 100px;
+    }
 nav a {
     text-align: center;
     color: #584D53;
