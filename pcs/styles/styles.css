@@ -1,94 +1,101 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 #content {
-    margin : 0 auto;
-    }
-body{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+body {
     background-color: #D4E2E8;
     grid-template-columns: repeat(10, 1fr);
 }
+
 header {
-    background-color: #1DD2D8 ;
+    background-color: #1DD2D8;
     display: grid;
     grid-template-columns: 150px auto;
     grid-template-rows: 100px;
 }
+
 .logo {
-    width : 100px;
-    }
+    width: 100px;
+}
+
 nav a {
     text-align: center;
     color: #584D53;
     text-decoration: none;
     padding: 35px;
-    margin-left: auto;
-    padding-left: 50px;
+    /*margin-left: auto; */
+    /*padding-left: 50px; */
+    font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
 }
+
 nav {
     display: flex;
+    justify-content: space-around;
 }
+
 nav a:hover {
-    background-color: #D4E2E8 ;
+    background-color: #D4E2E8;
     color: #585858;
 }
-.home-grid{
+
+.bolded {
+    font-weight: 700;
+}
+
+.home-grid {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
 }
-main section{
-    text-align: center;
-}
-main section img{
-    box-sizing: border-box;
-}
-#base {
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: auto;
-    gap: 20px;
-    text-align: center;
-    margin-top: 10px;
-}
-.base-box{
-    align-items: center;
-    max-width: 1600px;
 
+.base-box {
+    grid-column: 3/8;
+    grid-row: 2;
 }
-.repair-box{
-    align-items: center;
-    grid-row: 5/8;
+
+.repair-box {
+    grid-column: 3/8;
+    grid-row: 5;
 }
-#base-img,
-#repair-img {
-    width: auto; /* This makes the image fill its container */
-    max-width: 1600px; /* Adjust the max-width as needed */
-    height: 500px; /* Maintain aspect ratio */
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+
+.base-img,
+.repair-img {
+    max-width: 90%;
 }
-.home-title, h4{
-    background-color: #584D53;
-    color: #1DD2D8;
+
+.home-title,
+h4 {
+    color: #584D53;
     font-family: 'Times New Roman', Times, serif;
     grid-column: 1/11;
-    grid-row: inherit;
+    grid-row: 3;
     font-size: 1.5em;
 }
-#background {
+
+.background {
     height: 200px;
     background-color: #1DD2D8;
     grid-column: 1/11;
 }
+
 .card-img {
     width: 100%;
 }
+
 .msg {
     text-align: center;
     display: grid;
     flex-direction: column;
     align-items: center;
-    grid-column:1/11;
-    grid-row: 8/9;
+    grid-column: 3/9;
+    grid-row: 4;
 }
 
 .msg h2 {
@@ -102,12 +109,14 @@ main section img{
     color: #584D53;
     font-size: 1em;
     padding: 15px;
-    width: 100%; /* Adjust the width as needed */
-    margin-top: 10px; /* Adjust the top margin as needed */
+    width: 100%;
+    /* Adjust the width as needed */
+    margin-top: 10px;
+    /* Adjust the top margin as needed */
     box-sizing: border-box;
 }
 
-footer{
+footer {
     background-color: #584D53;
     color: #1DD2D8;
     text-decoration: none;
@@ -117,34 +126,89 @@ footer{
     justify-content: space-around;
     align-items: center;
 }
-footer a{
+
+footer a {
     color: #A2DDB9;
     text-decoration: none;
 }
-footer a:hover{
+
+footer a:hover {
     text-decoration: underline;
     background-color: #584D53;
     color: #1DD2D8;
 }
+
 /*Custom builds*/
-.io{
+.io {
     grid-column: 2/5;
+    grid-row: 2;
 }
-.io-box{
-    align-items: center;
-    max-width: 1600px;
+
+
+.custom-box {
+    grid-column: 7/10;
+    grid-row: 4;
+}
+
+.io-img,
+.custom-img {
+
+    /* This makes the image fill its container */
+    max-width: 100%;
+    /* Adjust the max-width as needed */
 
 }
-.custom-box{
-    align-items: baseline;
-    grid-column: 3/7;
+
+.background {
+    background-color: #A2DDB9;
+    grid-column: 1/11;
 }
-#io-img,
-#custom-img {
-    width: auto; /* This makes the image fill its container */
-    max-width: 1600px; /* Adjust the max-width as needed */
-    height: 500px; /* Maintain aspect ratio */
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+
+.io-msg {
+    color: #3e3e3e;
+    padding: 2em 0;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+}
+
+.msg-build {
+    grid-column: 3/9;
+    grid-row: 3;
+    text-align: left;
+    background-color: #A2DDB9;
+    color: #584D53;
+    padding: 2em;
+}
+
+.msg-build p {
+    background-color: unset;
+}
+/* Repairs site*/
+.jig-msg{
+    grid-column: 1/11;
+    text-align: center;
+    grid-row: 2;
+}
+.jig-box{
+    grid-column: 1/5;
+    grid-row: 3;
+}
+.bios-box{
+    grid-column: 3/8;
+    grid-row: 4;
+}
+.jig-img, .bios-img{
+    max-width: 100%;
+}
+.msg-repair {
+    grid-column: 5/11;
+    grid-row: 3;
+    text-align: left;
+    background-color: #A2DDB9;
+    color: #584D53;
+    padding: 2em;
+}
+.msg-repair p{
+    background-color: unset;
 }
