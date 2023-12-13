@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+img {
+    max-width: 100%;
+}
 #content {
     max-width: 1600px;
     margin: 0 auto;
@@ -56,19 +59,15 @@ nav a:hover {
 }
 
 .base-box {
-    grid-column: 3/8;
+    grid-column: 3/9;
     grid-row: 2;
 }
 
 .repair-box {
-    grid-column: 3/8;
+    grid-column: 3/9;
     grid-row: 5;
 }
 
-.base-img,
-.repair-img {
-    max-width: 90%;
-}
 
 .home-title,
 h4 {
@@ -76,12 +75,13 @@ h4 {
     font-family: 'Times New Roman', Times, serif;
     grid-column: 1/11;
     grid-row: 3;
-    font-size: 1.5em;
+    font-size: 2em;
+    text-align: center;
 }
 
 .background {
     height: 200px;
-    background-color: #1DD2D8;
+    background-color: #A2DDB9;
     grid-column: 1/11;
 }
 
@@ -159,10 +159,7 @@ footer a:hover {
 
 }
 
-.background {
-    background-color: #A2DDB9;
-    grid-column: 1/11;
-}
+
 
 .io-msg {
     color: #3e3e3e;
@@ -186,29 +183,32 @@ footer a:hover {
 }
 /* Repairs site*/
 .jig-msg{
+    margin: 0;
     grid-column: 1/11;
     text-align: center;
-    grid-row: 2;
+    grid-row: 1;
 }
 .jig-box{
     grid-column: 1/5;
-    grid-row: 3;
+    grid-row: 2;
 }
 .bios-box{
     grid-column: 3/8;
-    grid-row: 4;
-}
-.jig-img, .bios-img{
-    max-width: 100%;
+    grid-row: 3;
 }
 .msg-repair {
     grid-column: 5/11;
-    grid-row: 3;
+    grid-row: 2;
     text-align: left;
-    background-color: #A2DDB9;
+    background-color: #1DD2D8;
     color: #584D53;
     padding: 2em;
 }
 .msg-repair p{
     background-color: unset;
+}
+@media screen and (max-width: 900px) {
+    header, nav, main, footer{
+        display: block;
+    }
 }
