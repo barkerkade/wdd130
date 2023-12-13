@@ -115,7 +115,9 @@ h4 {
     /* Adjust the top margin as needed */
     box-sizing: border-box;
 }
-
+ul, li {
+    text-align: left;
+}
 footer {
     background-color: #584D53;
     color: #1DD2D8;
